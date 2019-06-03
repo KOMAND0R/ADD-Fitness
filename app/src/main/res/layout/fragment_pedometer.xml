@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light">
+
+    <Button
+        android:id="@+id/btnStartPedometer"
+        android:text="Открыть шагомер"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnStartPedometerDiagram"
+        android:text="Открыть диаграмму шагов"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Pedometer Fragment"
+        android:textSize="30sp" />
+
+</RelativeLayout>

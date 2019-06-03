@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="ИМТ и динамика веса"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Укажите ваш текущий вес, кг."
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:text="Укажите ваш текущий рост, см."
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewIMT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="20dp"
+        android:text="Ваш ИМТ: "
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/weightButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_gradient"
+        android:text="Динамика веса"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/countButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_gradient"
+        android:text="Рассчитать ИМТ"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/weightInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="470dp"
+        android:text="(?) Об индексе массы тела"
+        android:textSize="15sp" />
+
+</RelativeLayout>

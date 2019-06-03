@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food.FoodOptimalActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Введите вес, кг"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/optimalWeight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="90dp"
+                android:text="Введите рост, см"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/optimalHeight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="125dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="170dp"
+                android:text="Введите возраст"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/optimalAge"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="205dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="260dp"
+                android:text="Выберите пол"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="290dp"
+                android:background="@drawable/edittext_background"
+                android:entries="@array/sex" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="320dp"
+                android:text="Выберите уровень активности"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerAct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="350dp"
+                android:background="@drawable/edittext_background"
+                android:entries="@array/activity" />
+
+            <TextView
+                android:id="@+id/tvhb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="380dp"
+                android:text="Оптимальное количество калорий по формуле Харриса-Бенедикта:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvmg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="440dp"
+                android:text="Оптимальное количество калорий по формуле Маффина-Джеора:"
+                android:textSize="18sp" />
+
+
+
+            <Button
+                android:id="@+id/countOptimalButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_gradient2"
+                android:text="Рассчитать количество"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coursework">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Food.FoodOptimalActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name=".Food.FoodDiagramActivity" />
+        <activity android:name=".Weight.TableActivity" />
+        <activity android:name=".Food.TableActivityFood" />
+        <activity android:name=".Weight.WeightDiagramActivity" />
+        <activity
+            android:name=".Weight.WeightInfoActivity"
+            android:theme="@style/AppTheme.NoActionBat" />
+        <activity android:name=".Pedometer.PedometerActivity" />
+        <activity android:name=".Pedometer.PedometerDiagramActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

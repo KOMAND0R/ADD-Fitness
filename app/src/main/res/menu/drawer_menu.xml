@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pedometer"
+            android:icon="@drawable/ic_pedometer"
+            android:title="Шагомер" />
+        <item
+            android:id="@+id/nav_training"
+            android:icon="@drawable/ic_training"
+            android:title="Тренировки" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Оптимальные показатели" />
+        <item
+            android:id="@+id/nav_weight"
+            android:icon="@drawable/ic_weight"
+            android:title="Ваш вес" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_food"
+            android:title="Расчёт калорий" />
+    </group>
+
+    <item android:title="Информация">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info"
+                android:title="О приложении" />
+        </menu>
+    </item>
+
+</menu>

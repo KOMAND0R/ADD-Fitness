@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Расчёт калорий"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:text="Найдите продукт"
+                android:textSize="18sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/productTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="160dp"
+                android:text="Укажите вес продукта, г."
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/productWeight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="195dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textViewCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="260dp"
+                android:layout_marginRight="20dp"
+                android:text="Калории: 0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewProteins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="290dp"
+                android:layout_marginRight="20dp"
+                android:text="Белки: 0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewFats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="320dp"
+                android:layout_marginRight="20dp"
+                android:text="Жиры: 0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewCarbohydrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginRight="20dp"
+                android:text="Углеводы: 0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/addProductButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_gradient2"
+                android:text="Добавить продукт"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/countOptimalButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="470dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_gradient2"
+                android:text="Рассчитать оптимальное количество"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/dbButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="540dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_gradient2"
+                android:text="Динамика калорий"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
