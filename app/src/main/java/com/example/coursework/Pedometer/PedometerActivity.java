@@ -1,6 +1,8 @@
 package com.example.coursework.Pedometer;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -17,7 +19,9 @@ public class PedometerActivity extends AppCompatActivity implements SensorEventL
 
     private SensorManager sensorManager;
     private TextView count;
+    public int stepCount = 0;
     boolean activityRunning;
+    PedometerDB pedometerDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,12 +29,15 @@ public class PedometerActivity extends AppCompatActivity implements SensorEventL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedometer);
 
+
+
         count = (TextView) findViewById(R.id.count);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
     }
 
     @Override
-    protected void onResume() {
+    protected void onResume()
+    {
         super.onResume();
         activityRunning = true;
         Sensor countSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
@@ -47,7 +54,8 @@ public class PedometerActivity extends AppCompatActivity implements SensorEventL
     }
 
     @Override
-    protected void onPause() {
+    protected void onPause()
+    {
         super.onPause();
         activityRunning = false;
         // if you unregister the last listener, the hardware will stop detecting
@@ -56,14 +64,32 @@ public class PedometerActivity extends AppCompatActivity implements SensorEventL
     }
 
     @Override
-    public void onSensorChanged(SensorEvent event) {
-        if (activityRunning) {
-            count.setText(String.valueOf(event.values[0]));
+    public void onSensorChanged(SensorEvent event)
+    {
+        if (activityRunning)
+        {
+            stepCount++;
+            count.setText(stepCount);
         }
 
     }
 
     @Override
-    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+    public void onAccuracyChanged(Sensor sensor, int accuracy)
+    {
+
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        pedometerDB = new PedometerDB(this);
+        SQLiteDatabase database = pedometerDB.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(PedometerDB.KEY_STEPS, stepCount);
+        database.insert(PedometerDB.TABLE_PEDOMETER, null, contentValues);
+
+        finish();
     }
 }
