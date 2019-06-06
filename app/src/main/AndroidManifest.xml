@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Training.ThirdCycleActivity"></activity>
+        <activity android:name=".Training.SecondCycleActivity" />
+        <activity android:name=".Training.FirstCycleActivity" />
         <activity
             android:name=".Food.FoodOptimalActivity"
             android:theme="@style/Theme.AppCompat.Light" />

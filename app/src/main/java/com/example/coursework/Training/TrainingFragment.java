@@ -20,9 +20,14 @@ public class TrainingFragment extends Fragment implements View.OnClickListener
     {
         View rootView = inflater.inflate(R.layout.fragment_training, container, false);
 
-        Button buttonStartTimer = rootView.findViewById(R.id.startTimer);
+        Button buttonStartFirst = rootView.findViewById(R.id.startFirstCycle);
+        Button buttonStartSecond = rootView.findViewById(R.id.startSecondCycle);
+        Button buttonStartThird = rootView.findViewById(R.id.startThirdCycle);
 
-        buttonStartTimer.setOnClickListener(this);
+        buttonStartFirst.setOnClickListener(this);
+        buttonStartSecond.setOnClickListener(this);
+        buttonStartThird.setOnClickListener(this);
+
         return rootView;
     }
 
@@ -31,7 +36,18 @@ public class TrainingFragment extends Fragment implements View.OnClickListener
     {
         switch (v.getId())
         {
-
+            case R.id.startFirstCycle:
+                Intent intent1 = new Intent(getActivity(), FirstCycleActivity.class);
+                getActivity().startActivity(intent1);
+                break;
+            case R.id.startSecondCycle:
+                Intent intent2 = new Intent(getActivity(), SecondCycleActivity.class);
+                getActivity().startActivity(intent2);
+                break;
+            case R.id.startThirdCycle:
+                Intent intent3 = new Intent(getActivity(), ThirdCycleActivity.class);
+                getActivity().startActivity(intent3);
+                break;
         }
     }
 }

@@ -5,23 +5,42 @@
     android:background="@android:color/white">
 
     <Button
-        android:id="@+id/startTimer"
+        android:id="@+id/startFirstCycle"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/button_gradient3"
-        android:text="Открыть таймер"
+        android:text="Подготовительный цикл"
         android:textAllCaps="false"
         android:textColor="#FFFFFF" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Training Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/startSecondCycle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_gradient3"
+        android:text="Силовой цикл"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/startThirdCycle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_gradient3"
+        android:text="Цикл гипертрофии"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

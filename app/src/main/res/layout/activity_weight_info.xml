@@ -27,6 +27,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/imt"
         app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="matrix"
         app:layout_constraintTop_toBottomOf="@+id/tvCount" />
 
 </android.support.constraint.ConstraintLayout>
